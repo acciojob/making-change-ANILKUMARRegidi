@@ -7,12 +7,12 @@
   };
 
   let change = {
-    p: 0,
-    n: 0,
+    q: 0,
     d: 0,
-    q: 0
+    n: 0,
+    p: 0
   };
-
+c = parseFloat(c)/100;
   while (c > 0) {
     if (c >= myMoney.quarter) {
       change.q++;
