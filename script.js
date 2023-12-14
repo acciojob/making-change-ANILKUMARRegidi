@@ -33,6 +33,6 @@ c = parseFloat(c)/100;
 }
 
 // Example: Prompt the user to enter a value for 'c'
-//const userInput = prompt("Enter c: ");
+const userInput = prompt("Enter c: ");
 const result = makeChange(userInput);
 alert(JSON.stringify(result));
