@@ -15,7 +15,7 @@
 
   c = parseInt(c)/100;
   
-  while (c >= 0.01) {
+  while (c >0) {
     if (c >= myMoney.quarter) {
       change.q++;
       c -= myMoney.quarter;
@@ -29,6 +29,9 @@
       change.p++;
       c -= myMoney.penny;
     }
+	  else {
+		  break;
+	  }
   }
   
   return change;
