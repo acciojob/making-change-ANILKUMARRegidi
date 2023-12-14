@@ -23,7 +23,7 @@ c = parseFloat(c)/100;
     } else if (c >= myMoney.nickel) {
       change.n++;
       c -= myMoney.nickel;
-    } else {
+    } else if(c>=myMoney.penny){
       change.p++;
       c -= myMoney.penny;
     }
@@ -33,6 +33,6 @@ c = parseFloat(c)/100;
 }
 
 // Example: Prompt the user to enter a value for 'c'
-const userInput = prompt("Enter c: ");
+//const userInput = prompt("Enter c: ");
 const result = makeChange(userInput);
 alert(JSON.stringify(result));
