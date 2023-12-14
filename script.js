@@ -10,10 +10,12 @@
     q: 0,
     d: 0,
     n: 0,
-    p: 0
+    p: 1
   };
-c = parseFloat(c)/100;
-  while (c > 0) {
+
+  c = parseInt(c)/100;
+  
+  while (c >= 0.01) {
     if (c >= myMoney.quarter) {
       change.q++;
       c -= myMoney.quarter;
@@ -23,12 +25,12 @@ c = parseFloat(c)/100;
     } else if (c >= myMoney.nickel) {
       change.n++;
       c -= myMoney.nickel;
-    } else if(c>=myMoney.penny){
+    } else if (c >= myMoney.penny) {
       change.p++;
       c -= myMoney.penny;
     }
   }
-
+  
   return change;
 }
 
