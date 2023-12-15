@@ -1,19 +1,19 @@
  const makeChange = (c) => {
   const myMoney = {
-    penny: 0.01,
-    nickel: 0.05,
-    dime: 0.10,
-    quarter: 0.25
+    penny: 1,
+    nickel: 5,
+    dime: 10,
+    quarter:25
   };
 
   let change = {
     q: 0,
     d: 0,
     n: 0,
-    p: 1
+    p: 0
   };
 
-  c = parseInt(c)/100;
+  
   
   while (c >0) {
     if (c >= myMoney.quarter) {
